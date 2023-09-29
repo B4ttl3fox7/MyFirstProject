@@ -18,10 +18,7 @@ nav {
 
 
 /* Header Styles */
-#f1{
-    position: relative;
-    top: 0px;
-}
+
 header {
     background: linear-gradient(231deg, #210c41, #64323c);
     color: #c35c5c;
