@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
@@ -38,17 +36,60 @@
     </nav>
   
   <main class="services">
-      <h1>Gallery</h1>
-		<div class="gallery-container">
-			<img src="images/1.png" alt="Spa Image 1">
-			<img src="images/2.png" alt="Spa Image 2">
-			<img src="images/3.png" alt="Spa Image 3">
-			<img src="images/4.png" alt="Spa Image 4">
-			<img src="images/5.png" alt="Spa Image 5">
-			<img src="images/6.png" alt="Spa Image 6">
-			<img src="images/7.png" alt="Spa Image 7">
-			<img src="images/8.png" alt="Spa Image 8">
+      <h1>Slide Show</h1>
+
+		<div class="container">
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">1/8</div>
+        <img src="images/1.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+        </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">2/8</div>
+        <img src="images/2.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">3/8</div>
+        <img src="images/3.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">4/8</div>
+        <img src="images/4.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">5/8</div>
+        <img src="images/5.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">6/8</div>
+        <img src="images/6.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: none;">
+        <div class="numbertext">7/8</div>
+        <img src="images/7.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+
+      <div class="mySlides" style="display: block;">
+        <div class="numbertext">8/8</div>
+        <img src="images/8.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      </div>
+        
+        
+
+  
+      <input type="button" value="<" onclick="plusSlides(-1)"> <a class="prev"></a>
+      <input type="button" value=">" onclick="plusSlides(1)">
+<a class="next"></a>
+ 
+
 		</div>
+
+    <div class="">
    <!-- Call to Action -->
    <section class="cta-container">
     <h2>Ready to Experience Our Services?</h2>
@@ -56,17 +97,42 @@
     <a href="contact.html" class="cta-button">Contact Us Now</a>
   </section>
 
-  </main>
+  </div></main>
   <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://twitter.com/">Twitter</a></li>
-        <li ><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <p>© 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
-
-  
  </div>
-</body>
-</html>
+ <script>
+  let slideIndex = 1;
+
+  showSlide(slideIndex);
+
+  function plusSlides(n) {
+    showSlide(slideIndex += n);
+  }
+
+  function showSlide(n) {
+    let slides = document.querySelectorAll('.mySlides');
+    
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    
+    slides[slideIndex - 1].style.display = 'block';
+  }
+</script>
+
+
+</body></html>
