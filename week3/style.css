@@ -1,33 +1,21 @@
 /* Reset Styles */
-
 body {
-    background: scroll;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #a35d5d;
-    background: linear-gradient(296deg, #0c0043, rgb(115 59 59));
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #505050;
 }
-
-nav {
-    box-shadow: 6px -2px 20px rgb(195 195 195);
-    position: sticky;
-    width: 100%;
-    top: 77px;
-}
-
 
 /* Header Styles */
-
 header {
-    background: linear-gradient(231deg, #210c41, #64323c);
-    color: #c35c5c;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: #fff;
     text-align: center;
     padding: 20px;
-    width: 100%;
-    position: sticky;
-    top: 0px;
-}
+} 
 
 .headeraH1 {
     margin: 0;
@@ -46,14 +34,18 @@ header {
 
 
 /* Navigation Styles */
+nav{
+position: sticky;
+top: 0;
+
+}
 nav ul {
-    background-color: #0a0114;
+    background-color: #333;
     color: #fff;
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 20px;
-    width: 100%;
 }
 
 nav li {
@@ -62,7 +54,7 @@ nav li {
 
 nav a {
     display: block;
-    color: #ad5656;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -99,10 +91,9 @@ main {
 .services {
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgb(16 0 35);
-    box-shadow: 0px 0px 13px rgb(195 195 195);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 main h3 {
     margin-top: 20px;
 }
@@ -125,9 +116,9 @@ main h3 {
 }
 
 .service-column img {
-    width: 100%;
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 250px; /* Limit the maximum height of the image */
     height: auto;
-    margin-bottom: 10px;
 }
 
 .service-column h3 {
@@ -153,24 +144,38 @@ main h3 {
 .cta-container {
     text-align: center;
     padding: 20px;
-    background-color: #554343;
-    margin-top: 32px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right top, #0061ff, #60efff);
+    font-family: 'Pixelify Sans', cursive;
+    font-size: larger;
+    padding: auto;
+    border: 1px solid #3498db;
+    margin: 10px;
+
 }
 
 .cta-button {
-   display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding */
+    background-color: #FF5733; /* Change background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid #FF5733; /* Add a border with the same color as the background */
+    border-radius: 30px; /* Increase border-radius for a rounded button */
     font-weight: bold;
     margin-top: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transitions for a hover effect */
+    cursor: pointer; /* Change cursor on hover */
+}
+.cta-container h2 {
+    font-size: 28px; /* Increase font size */
+    text-transform: uppercase; /* Make text uppercase */
+    margin-top: 0; /* Remove default top margin */
+    text-decoration: underline; /* Add underline */
 }
 
 .cta-button:hover {
-    background-color: #7640B3;
+    background-color: #00b0b3;
 }
 
 /* Footer Styles */
@@ -204,10 +209,10 @@ footer p {
     margin: 10px 0 0;
 }
 
+/*Here, will be the Gallery slide show style*/
 * {
     box-sizing: border-box;
     }
-
     .slideshow-img {
     vertical-align: middle;
     width: 100%;
@@ -251,14 +256,15 @@ footer p {
     .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     }
-     /* Number text (1/3 etc) */
-     .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-        }
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
 
     /* Style for the form: setting width, auto margin for centering, padding,
 background color, border radius for rounded corners, and font size */
