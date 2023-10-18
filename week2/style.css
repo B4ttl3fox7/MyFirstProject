@@ -204,9 +204,10 @@ footer p {
     margin: 10px 0 0;
 }
 
-{
+* {
     box-sizing: border-box;
     }
+
     .slideshow-img {
     vertical-align: middle;
     width: 100%;
