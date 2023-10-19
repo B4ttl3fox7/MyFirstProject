@@ -14,14 +14,14 @@
 <body>
   <form id="formed" action="/">
     
-    <div class="input"> //This div Tag stores all our elements in the page and is used to group them all in the input tag
-      
+      <center>
+      <div class="input"> //This div Tag stores all our elements in the page and is used to group them all in the input tag
       <label for="name">Username:</label>
       <input type="text" id="usernameId" name="username" class="success">
       <div class="error" id="usernameError"></div>
-      
-    </div>
-    
+       </div>
+      </center>
+
     <br>
 
   <center>
@@ -32,6 +32,8 @@
     </div>
   </center>
 
+  <br>
+    
    <center>
     <div class="input">
       <label for="password">Password:</label>
@@ -39,7 +41,9 @@
       <div class="error" id="passwordError">Must be 8 characters in length</div>
     </div>
    </center>
-
+  
+  <br>
+    
     <center>
     <div class="input">
       <label for="confirm">Confirm Password:</label>
@@ -47,6 +51,8 @@
       <div class="error" id="confirmPasswordError"></div>
     </div>
     </center>
+    
+  <br>
     
     <button type="submit" value="submit">Submit</button>
     <script src="script.js"></script>
