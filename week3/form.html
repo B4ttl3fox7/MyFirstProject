@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  //To start we create a header tag that stores two meta tags, a title tag, and our link tag reffereing to our StyleSheet
+  <!--To start we create a header tag that stores two meta tags, a title tag, and our link tag reffereing to our StyleSheet-->
   <head>
     
     <script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
-  <meta charset="UTF-8">// This sets up the character encoding to UTF-8
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">// This tag sizes the Scale to fit the device's with
+  <meta charset="UTF-8">  <!--// This sets up the character encoding to UTF-8-->
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- This tag sizes the Scale to fit the device's with-->
     <title>Fill Out Form </title>//This is our Title
     <link rel="stylesheet" href="style.css">//And here is our link that refers to our Style Sheet "Style.css".
     
@@ -14,14 +15,18 @@
 <body>
   <form id="formed" action="/">
     
-      <center>
-      <div class="input"> //This div Tag stores all our elements in the page and is used to group them all in the input tag
+    <center>
+      <!--This div Tag is of the class Input that is given to the Elements in the page that takes input from the user-->
+      <div class="input">
+      <!--This label is Used to just add Username in the page -->
       <label for="name">Username:</label>
+      <!--This text field takes the Username the user name has given and runs it through the Javascript file script to check if the input given is elligible-->
       <input type="text" id="usernameId" name="username" class="success">
-      <div class="error" id="usernameError"></div>
+      <!--Here is the Tag that Allows us to know if there are any problems with the userName -->
+      <div class="error" id="usernameError"> > </div>
        </div>
-      </center>
-
+    </center>
+<!--This is the br tag mostly used for Formatting by leaving space -->
     <br>
 
   <center>
