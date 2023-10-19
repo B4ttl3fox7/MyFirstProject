@@ -1,8 +1,8 @@
-const form = document.getElementById("form");
+const form = document.getElementById("formed");
 const username = document.getElementById("usernameId");
 const email = document.getElementById("emailId");
 const password = document.getElementById("passwordId");
-const confirmPassword = document.getElementById("confirmPassword");
+const confirmPassword = document.getElementById("confirm");
 
 const usernameError = document.getElementById("usernameError");
 const emailError = document.getElementById("emailError");
