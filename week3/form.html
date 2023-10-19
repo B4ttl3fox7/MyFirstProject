@@ -1,14 +1,20 @@
-<html lang="en"><head><script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fill Out Form </title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html>
+  //To start we create a header tag that stores two meta tags, a title tag, and our link tag reffereing to our StyleSheet
+  <head>
+    
+    <script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
+  <meta charset="UTF-8">// This sets up the character encoding to UTF-8
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">// This tag sizes the Scale to fit the device's with
+    <title>Fill Out Form </title>//This is our Title
+    <link rel="stylesheet" href="style.css">//And here is our link that refers to our Style Sheet "Style.css".
+    
 </head>
   
 <body>
   <form id="formed" action="/">
     
-    <div class="input">
+    <div class="input"> //This div Tag stores all our elements in the page and is used to group them all in the input tag
       
       <label for="name">Username:</label>
       <input type="text" id="usernameId" name="username" class="success">
@@ -18,26 +24,33 @@
     
     <br>
 
+  <center>
     <div class="input">
       <label for="email">Email:</label>
       <input type="email" id="emailId" name="email" class="success">
       <div class="error" id="emailError"></div>
     </div>
+  </center>
 
+   <center>
     <div class="input">
       <label for="password">Password:</label>
       <input type="password" id="passwordId" name="password" class="error">
       <div class="error" id="passwordError">Must be 8 characters in length</div>
     </div>
+   </center>
 
+    <center>
     <div class="input">
       <label for="confirm">Confirm Password:</label>
       <input type="password" id="confirm" name="confirmPassword">
       <div class="error" id="confirmPasswordError"></div>
     </div>
-
-    <button type="submit" value="submit"><a href="https://z4h33r-lang.github.io/MyFirstProject/week3/index.html">Submit</a></button>
+    </center>
+    
+    <button type="submit" value="submit">Submit</button>
     <script src="script.js"></script>
+    
   </form>
   
 
