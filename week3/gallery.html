@@ -1,41 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Wanderlust Voyages</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   .gallery-container {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+  }
 
-<html>	
-	<head>
-	
- 
-		  <title>Gallery - Wanderlust Voyages</title>
-		  <link rel="stylesheet" href="style.css">
-			
-		  <style>
-		   .gallery-container {
-			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			margin-top: 40px;
-		  }
-		
-		   .gallery-container img {
-			width: 24%;
-			margin-bottom: 20px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		  }
-		  </style>
-			
-		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		 <meta charset="UTF-8">
-	
-	</head>
-	
+   .gallery-container img {
+	width: 24%;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-	
  <div>
   <header>
-    <h1 class="h1"> Wanderlust Voyages | Travel Agency </h1>
+    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
 	</header>
     <nav>
-	    
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -44,131 +35,104 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="tasks.html">Tasks</a></li>
     </ul>
-	    
     </nav>
   
   <main class="services">
-	  
-    <!-- Slide Show Area -->
-	  
       <h1>Slide Show</h1>
 
-<!--Here is the container div that is used to store the Slides that we use to make our SlideShow-->
-<div class="container">
+		<div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1/8</div>
+        <img src="images/1.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        </div>
 
-
-	<!--This div holds the Image "1.png" that is the first image to be shown-->
-      <div class="mySlides" style="display: none;">
-        	<div class="numberText">1/8</div>
-        	<img src="images/1.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">2/8</div>
+        <img src="images/2.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
 
-	<!--This div holds the Image "2.png" Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">2/8</div>
-	        <img src="images/2.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">3/8</div>
+        <img src="images/3.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
 
-	<!--This div holds the Image "3.png"  Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">3/8</div>
-	        <img src="images/3.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">4/8</div>
+        <img src="images/4.jpg" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-	<!--This div holds the Image "4.png" that is the first image to be shown. Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">4/8</div>
-	        <img src="images/4.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">5/8</div>
+        <img src="images/5.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
 
-	<!--This div holds the Image "5.png" Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">5/8</div>
-	        <img src="images/5.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">6/8</div>
+        <img src="images/6.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
 
-	<!--This div holds the Image "6.png". Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">6/8</div>
-	        <img src="images/6.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">7/8</div>
+        <img src="images/7.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
 
-	<!--This div holds the Image "7.png". Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: none;">
-	        <div class="numberText">7/8</div>
-	        <img src="images/7.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+      <div class="mySlides">
+        <div class="numbertext">8/8</div>
+        <img src="images/8.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
       </div>
+        
+        
 
-	<!--This div holds the Image "8.png". Initially the image is not shown as Display is set to None-->
-      <div class="mySlides" style="display: block;">
-	        <div class="numberText">8/8</div>
-	        <img src="images/8.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
-      </div>
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
 
-	<!--This button reduces the Index Number-->
-      <input type="button" value="<" onclick="plusSlides(-1)"> <a class="prev"></a>
-	<!--This butoon increase the Index number-->
-      <input type="button" value=">" onclick="plusSlides(1)"> <a class="next"></a>
-
-</div>
+		</div>
 
     <div class="">
-	    
    <!-- Call to Action -->
-	    
    <section class="cta-container">
     <h2>Ready to Experience Our Services?</h2>
     <p>Join us today and discover the difference we can make for you!</p>
     <a href="contact.html" class="cta-button">Contact Us Now</a>
   </section>
 
-  </div>
-  
   </main>
-	 
   <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li ><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p>© 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
-	 
  </div>
-	
  <script>
-  /*This Script is used to take the input given by button presses and 
-  using that input would move the images stored in the mySlides class to and fro depending on the input
-  let Index = 1;
-  */
+  let slideIndex = 1;
 
-//This calls on the function *showSlide* that takes the Index 
-  showSlide(Index);
+  showSlide(slideIndex);
 
   function plusSlides(n) {
-    showSlide(Index += n);
+    showSlide(slideIndex += n);
   }
 
   function showSlide(n) {
     let slides = document.querySelectorAll('.mySlides');
     
     if (n > slides.length) {
-      Index = 1;
+      slideIndex = 1;
     }
     if (n < 1) {
-      Index = slides.length;
+      slideIndex = slides.length;
     }
     
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
     
-    slides[Index - 1].style.display = 'block';
+    slides[slideIndex - 1].style.display = 'block';
   }
 </script>
-
-
-  </body>
-
+</body>
 </html>
