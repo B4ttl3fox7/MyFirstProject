@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 
 <html>	
-<head>
+	<head>
 	
  
-  <title>Gallery - Wanderlust Voyages</title>
-  <link rel="stylesheet" href="style.css">
+		  <title>Gallery - Wanderlust Voyages</title>
+		  <link rel="stylesheet" href="style.css">
+			
+		  <style>
+		   .gallery-container {
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 40px;
+		  }
+		
+		   .gallery-container img {
+			width: 24%;
+			margin-bottom: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		  }
+		  </style>
+			
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <meta charset="UTF-8">
 	
-  <style>
-   .gallery-container {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 40px;
-  }
-
-   .gallery-container img {
-	width: 24%;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  </style>
-	
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta charset="UTF-8">
-	
-</head>
+	</head>
 	
 <body>
 	
@@ -48,49 +48,66 @@
     </nav>
   
   <main class="services">
+	  
+    <!-- Slide Show Area -->
+	  
       <h1>Slide Show</h1>
 
+<!--Here is the container div that is used to store the Slides that we use to make our SlideShow-->
 <div class="container">
-  <div class="mySlides" style="display: none;">
+
+
+	<!--This div holds the Image "1.png" that is the first image to be shown-->
+      <div class="mySlides" style="display: none;">
         	<div class="numberText">1/8</div>
         	<img src="images/1.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "2.png" Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">2/8</div>
 	        <img src="images/2.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "3.png"  Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">3/8</div>
 	        <img src="images/3.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "4.png" that is the first image to be shown. Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">4/8</div>
 	        <img src="images/4.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "5.png" Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">5/8</div>
 	        <img src="images/5.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "6.png". Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">6/8</div>
 	        <img src="images/6.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "7.png". Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: none;">
 	        <div class="numberText">7/8</div>
 	        <img src="images/7.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--This div holds the Image "8.png". Initially the image is not shown as Display is set to None-->
       <div class="mySlides" style="display: block;">
 	        <div class="numberText">8/8</div>
 	        <img src="images/8.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
+
+	<!--This button reduces the Index Number-->
       <input type="button" value="<" onclick="plusSlides(-1)"> <a class="prev"></a>
+	<!--This butoon increase the Index number-->
       <input type="button" value=">" onclick="plusSlides(1)"> <a class="next"></a>
 
 </div>
@@ -121,8 +138,12 @@
  </div>
 	
  <script>
+  /*This Script is used to take the input given by button presses and 
+  using that input would move the images stored in the mySlides class to and fro depending on the input
   let Index = 1;
+  */
 
+//This calls on the function *showSlide* that takes the Index 
   showSlide(Index);
 
   function plusSlides(n) {
@@ -148,4 +169,6 @@
 </script>
 
 
-</body></html>
+  </body>
+
+</html>
