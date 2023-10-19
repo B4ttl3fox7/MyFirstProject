@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head><script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
   <meta charset="UTF-8">
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
@@ -41,51 +39,51 @@
       <h1>Slide Show</h1>
 
 		<div class="container">
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">1/8</div>
-        <img src="images/1.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/1.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
         </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">2/8</div>
-        <img src="images/2.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/2.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">3/8</div>
-        <img src="images/3.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/3.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">4/8</div>
-        <img src="images/4.jpg" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
+        <img src="images/4.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: block;">
         <div class="numbertext">5/8</div>
-        <img src="images/5.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/5.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">6/8</div>
-        <img src="images/6.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/6.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">7/8</div>
-        <img src="images/7.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/7.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">8/8</div>
-        <img src="images/8.jpg" alt="Gallery Slide Show" class="SlideShow-img"width="100%">
+        <img src="images/8.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
         
         
 
   
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
  
 
 		</div>
@@ -98,41 +96,42 @@
     <a href="contact.html" class="cta-button">Contact Us Now</a>
   </section>
 
-  </main>
+  </div></main>
   <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://twitter.com/">Twitter</a></li>
-        <li ><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <p>© 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
  </div>
  <script>
-  let slideIndex = 1;
+  let Index = 1;
 
-  showSlide(slideIndex);
+  showSlide(Index );
 
   function plusSlides(n) {
-    showSlide(slideIndex += n);
+    showSlide(Index += n);
   }
 
   function showSlide(n) {
     let slides = document.querySelectorAll('.mySlides');
     
     if (n > slides.length) {
-      slideIndex = 1;
+      Index = 1;
     }
     if (n < 1) {
-      slideIndex = slides.length;
+      Index = slides.length;
     }
     
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
     
-    slides[slideIndex - 1].style.display = 'block';
+    slides[Index - 1].style.display = 'block';
   }
 </script>
-</body>
-</html>
+
+
+</body></html>
