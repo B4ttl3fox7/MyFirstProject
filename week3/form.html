@@ -18,19 +18,24 @@
     <center>
       <!--This div Tag is of the class Input that is given to the Elements in the page that takes input from the user-->
       <div class="input">
-      <!--This label is Used to just add Username in the page -->
+      <!--This label is Used to add the text "Username" in the page -->
       <label for="name">Username:</label>
       <!--This text field takes the Username the user name has given and runs it through the Javascript file script to check if the input given is elligible-->
       <input type="text" id="usernameId" name="username" class="success">
+        
+        <br>
+        
       <!--Here is the Tag that Allows us to know if there are any problems with the userName -->
       <div class="error" id="usernameError"> > </div>
        </div>
     </center>
+    
 <!--This is the br tag mostly used for Formatting by leaving space -->
     <br>
 
   <center>
     <div class="input">
+      <!--This label is Used to add the text "Email" in the page -->
       <label for="email">Email:</label>
       <input type="email" id="emailId" name="email" class="success">
       <div class="error" id="emailError"></div>
@@ -41,6 +46,7 @@
     
    <center>
     <div class="input">
+      <!--This label is Used to add the text "Password" in the page -->
       <label for="password">Password:</label>
       <input type="password" id="passwordId" name="password" class="error">
       <div class="error" id="passwordError">Must be 8 characters in length</div>
