@@ -1,7 +1,14 @@
-<html lang="en"><head><script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+	<!--This is where we create our slide show-->
+	<head>
+		<script>
+			window["GUARDIO_SENSOR_CONF"] = {"click":true}
+		</script>
+		
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
+		
   <style>
    .gallery-container {
 	margin: 0 auto;
@@ -17,9 +24,13 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   </style>
+		
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+	
 <body>
+	
  <div>
   <header>
     <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
@@ -38,55 +49,66 @@
   <main class="services">
       <h1>Slide Show</h1>
 
-		<div class="container">
+	<!--Slide show Section-->  
+      <div class="container">
+
+	<!--Here we create our 1st div of class "MySlide" where we store the first image that should be displayed when the page is opened-->     
       <div class="mySlides" style="display: none;">
+	<!--This is used to show which slide is currently being shown and also tells us the total number of slides present in our slideshow-->      
         <div class="numbertext">1/8</div>
+	 <!--here the image is created with the link present. However if the link is not present a text present in the alt attribute will be shown instead-->     
         <img src="images/1.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
         </div>
 
+	<!--Now this is our 2nd div that stores the second image of the slideshow-->      
       <div class="mySlides" style="display: none;">
         <div class="numbertext">2/8</div>
         <img src="images/2.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--Now this is our 3rd div that stores the third image of the slideshow--> 
       <div class="mySlides" style="display: none;">
         <div class="numbertext">3/8</div>
         <img src="images/3.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides" style="display: none;">
+	<!--Now this is our 4th div that stores the fourth image of the slideshow--> 
+      <div class="mySlides" style="display: block;">
         <div class="numbertext">4/8</div>
         <img src="images/4.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
-      <div class="mySlides" style="display: block;">
+	<!--Now this is our 5th div that stores the fifth image of the slideshow--> 
+      <div class="mySlides" style="display: none;">
         <div class="numbertext">5/8</div>
         <img src="images/5.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--Now this is our 6th div that stores the sixth image of the slideshow--> 
       <div class="mySlides" style="display: none;">
         <div class="numbertext">6/8</div>
         <img src="images/6.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--Now this is our 7th div that stores the seventh image of the slideshow--> 
       <div class="mySlides" style="display: none;">
         <div class="numbertext">7/8</div>
         <img src="images/7.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
 
+	<!--Now this is our 8th div that stores the eighth image of the slideshow--> 
       <div class="mySlides" style="display: none;">
         <div class="numbertext">8/8</div>
         <img src="images/8.png" alt="Gallery Slide Show" class="SlideShow-img" width="100%">
       </div>
-        
-        
 
-  
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
+	<!--These are our input buttons that will help us navigate to and fro our slideshow,
+	      They each have and onclick attribute that calls the plusSlides function from our Javascript area-->
+      <input type="button" onclick=" nextOrPrevious(-1)" value="<">
+      <input type="button" onclick=" nextOrPrevious(1)" value=">">
  
 
-		</div>
+	</div>
 
     <div class="">
    <!-- Call to Action -->
@@ -96,7 +118,9 @@
     <a href="contact.html" class="cta-button">Contact Us Now</a>
   </section>
 
-  </div></main>
+  </div>
+  </main>
+	 
   <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
@@ -106,25 +130,37 @@
     <p>© 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
  </div>
+	
  <script>
+// Now in this Script tag we first create a variable named index that points to the slide we are currently viewing
   let Index = 1;
+
 
   showSlide(Index );
 
-  function plusSlides(n) {
+//in this function the Index increases and points to the next image of the slideshow OR the previous image of the slideshow if its negative
+  function nextOrPrevious(n) {
     showSlide(Index += n);
   }
 
+//Here we create a query called slides that houses all the images that we will be using in our slideShow and hides the images that hvae not been selected
   function showSlide(n) {
     let slides = document.querySelectorAll('.mySlides');
-    
+
+//if n is greater than the size of the que, the Index is set to 1
     if (n > slides.length) {
       Index = 1;
     }
+
+//If n points to an element that is less than one like 0 or a negative number than the index must be set to the last image of the slideshow
     if (n < 1) {
       Index = slides.length;
     }
-    
+
+/*Here a loop is created where all the images minus the image that should be viewed is
+hidden from the user and will only be viewable when the user moves to them
+*/
+	  
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
@@ -134,4 +170,5 @@
 </script>
 
 
-</body></html>
+</body>
+</html>
