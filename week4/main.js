@@ -8,11 +8,10 @@ btn.addEventListener("click",function()
     ourRequest.onload = function() {
 var ourData = JSON.parse(ourRequest.responseText);
 renderHTML(ourData);
-btn.classList.add("hide-me");
+console.log(ourData[0]);
 }
 
 ourRequest.send();
-
 });
 
 function renderHTML(data){
