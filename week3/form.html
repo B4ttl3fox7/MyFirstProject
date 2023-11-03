@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><!--To start we create a header tag that stores two meta tags, a title tag, and our link tag reffereing to our StyleSheet--><head><script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
+    
+  <script>window["GUARDIO_SENSOR_CONF"] = {"click":true}</script>
+    
+  <meta charset="UTF-8">  <!--// This sets up the character encoding to UTF-8-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This tag sizes the Scale to fit the device's with-->
+    <title>Fill Out Form </title> <!--This is our Title-->
+    <link rel="stylesheet" href="style.css"> <!--And here is our link that refers to our Style Sheet "Style.css"-->
+    
+</head>
+  
+<body>
+  <header>
+      <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+    </ul>
+    </nav>
+
+    <br>
+  
+  <form id="formed" action="/">
+    
+    <center>
+      <!--This div Tag is of the class Input that is given to the Elements in the page that takes input from the user-->
+      <div class="input">
+      <!--This label is Used to add the text "Username" in the page -->
+      <label for="name">Username:</label>
+      <!--this text field is used by the user to input the Username they choose-->
+      <input type="text" id="usernameId" name="username" class="success">
+        
+        <br>
+        
+      <!--Here is the Tag that takes the Username provided and runs it through the Javascript and if there are errors it will be known-->
+      <div class="error" id="usernameError"></div>
+       </div>
+    </center>
+    
+<!--This is the br tag mostly used for Formatting by leaving space -->
+    <br>
+
+  <center>
+    <div class="input">
+      <!--This label is Used to add the text "Email" in the page -->
+      <label for="email">Email:</label>
+      <!--this text field is used by the user to input the email-->
+      <input type="email" id="emailId" name="email" class="error">
+      <!--Here is the Tag that takes the Email provided and runs it through the Javascript and if there are errors it will be known-->
+      <div class="error" id="emailError">Invalid email format.</div>
+    </div>
+  </center>
+
+  <br>
+    
+   <center>
+    <div class="input">
+      <!--This label is Used to add the text "Password" in the page -->
+      <label for="password">Password:</label>
+       <!--this text field is used by the user to input the password-->
+      <input type="password" id="passwordId" name="password" class="success">
+      <!--Here is the Tag that takes the Email provided and runs it through the Javascript and if there are errors it will be known-->
+      <div class="error" id="passwordError"></div>
+    </div>
+   </center>
+  
+  <br>
+    
+    <center>
+    <div class="input">
+      <!--This label is Used to add the text "Confirm Password" in the page -->
+      <label for="confirm">Confirm Password:</label>
+       <!--this text field is used by the user to input the same password-->
+      <input type="password" id="confirm" name="confirmPassword" class="success">
+        <!--Here is the Tag that takes the SECOND password provided and runs it through the Javascript and sees if the two passwords given are the same-->
+      <div class="error" id="confirmPasswordError"></div>
+    </div>
+    </center>
+    
+  <br>
+
+    
+    <center>
+      <!-- This is a submit button created to submit the following data -->
+    <button type="submit" value="submit">Submit</button>
+    </center>
+
+    <!--This script tag is used to take the values and inputs provided by the user and checks to see if meets the following conditions-->
+    <script src="script.js"></script>
+    
+  </form>
+   
+
+
+ </body>
+
+</html>
