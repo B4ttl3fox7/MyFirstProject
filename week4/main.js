@@ -1,29 +1,9 @@
-var myCity =[ {
-    //Here we are saving the information in a sheet so we type myCity.name.
-    "name": "Dubai" ,
-    "country": "UAE" ,
-    "place": "Dubai Mall"
-},
+var ourRequest = new XMLHttpRequest();
 
-{
-    "name": "Milan" ,
-    "country": "Italy" ,
-    "place": "Domo di Milan"
+ourRequest.open('GET','https://z4h33r-lang.github.io/MyFirstProject/week4/cities1.json');
 
-},
+ourRequest.onload = function() {
+console.log(ourRequest.responseText);
+};
 
-{
-
-    "name": "Abu Dhabi",
-    "country": "UAE",
-    "place": "Marine Mall"
-
-}
-
-]
-
-console.log(myCity.name);
-
-var myCity2 = ["Abu Dhabi","UAE"];
-//here we are saving the information in an array so we type myCity[1].
-console.log(myCity[1].country);
+ourRequest.send();
