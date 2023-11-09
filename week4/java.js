@@ -4,7 +4,7 @@ var input = document.getElementById("cityInput");
 
 btn.addEventListener("click",function()
 {
-    var value = 
+    var value = 1;;
     
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', '1c3b339e9beefb049032739092fb928e');
