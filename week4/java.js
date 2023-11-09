@@ -37,9 +37,8 @@ btn.addEventListener('click', function() {
         .then(data => {
            
             var weatherDetails = `
-                <p>Weather: ${data.weather[0].description}</p>
-                <p>Main Temperature: ${data.main.temp}Celsius</p>
-                <p>Wind Speed: ${data.wind.speed} m/s</p>
+                <p>The wrather in Dubai is ${data.weather[0].description}</p>
+                <p>The temperature is  ${data.main.temp} Celsius with a Wind Speed of ${data.wind.speed} m/s</p>
             `;
             Weather.innerHTML = weatherDetails;
         })
