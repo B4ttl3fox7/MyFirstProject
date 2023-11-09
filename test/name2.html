@@ -1,0 +1,35 @@
+<form>
+    
+    <label>String Key:   <input type="text" id="sKey"> <!-- the Key Name is inputed here --> </label>
+    <label>String Value: <input type="text" id="sValue"> <!-- The Value of the Key is stored here --> </label>
+
+    <button type="button" onclick="savewb()"  >Save <!--Uses savewb to save the Key and Value--> </button>
+    <button type="button" onclick="accesswb()">Get  <!--Takes the key of the value Stored in Web Storage And its Key and is presented in an Alert Box --> </button>
+    <button type="button" onclick="clearwb()" >Clear <!-- Removes everything --> </button>
+  </form>
+
+  <script>
+  function savewb() {
+    
+    if ( typeof(sessionStorage) == "undefined" ) {//If The Browser doesnt support Web storage, alert Box pops up informing this to the User.
+        alert("no session web storage available");
+        return;
+    }
+    var key = document.getElementById("sKey").value;//Else the Key inputed is stored in variable "key" here
+    if ( key != "" )//if Something is inputed into "key" then the value to be stored in "key" will be the value inputed 
+        sessionStorage[key] = document.getElementById("sValue").value;
+}
+
+function accesswb() {
+    var s = "";
+
+    for (var i=0; i<sessionStorage.length; i++) {//for all the keys and values stored in Session Storage
+        var key = sessionStorage.key(i);//Each key gets stored in "key"
+        s += key + " = " + sessionStorage.getItem(key) + "\n";//And is Added to "s" One by One (Notice the +=)
+    }
+    alert( s );//Alert box shows everything
+}
+function clearwb() {
+    sessionStorage.clear();//Everything gets removed in Session
+}
+</script>
