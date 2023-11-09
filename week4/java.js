@@ -11,7 +11,7 @@ btn.addEventListener('click', function() {
     var city = Input.value;
 
     if (city == null || city == "") {
-        alert('Please enter a city name.');
+        alert('No Input is Provided. Please Provide some input.');
         return;
     }
 
@@ -21,7 +21,7 @@ btn.addEventListener('click', function() {
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error('Error in Network. Try Reconnecting.');
             }
             return response.json();
         })
@@ -37,6 +37,6 @@ btn.addEventListener('click', function() {
         .catch(error => {
             
             console.error('Error:', error.message);
-            Weather.innerHTML = '<p>Error fetching weather data. Please try again later.</p>';
+            Weather.innerHTML = '<p>Input is Unrecognisable. Cannot fetch weather data. Check input and try again.</p>';
         });
 });
