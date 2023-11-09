@@ -1,11 +1,9 @@
-var API = '1c3b339e9beefb049032739092fb928e';
-
-
+//Variables for user input, Button, And Weather Data is provided
 var Input = document.getElementById('cityInput');
 var btn = document.getElementById('btn');
 var Weather = document.getElementById('weather-info');
 
-
+//Event Listener for Button is Created
 btn.addEventListener('click', function() {
    
     var city = Input.value;
@@ -15,13 +13,24 @@ btn.addEventListener('click', function() {
         return;
     }
 
-    
-    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
+//Variable for openWeatherMap API Is created Holding the URL Link For Weather Data where "API" Is the API Key generated
+    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1c3b339e9beefb049032739092fb928e`;
 
+/*With This Data we compare it with the User input to see if
+*City Name Matches with any City Present in The URL
+*If Present then the following is Printed
+*Weather: (Weather of City)
+*Main Temperature: (Temperature)
+*Wind Speed: (Wind Speed)
+*
+*If response is null then An alert Box pops up telling the user to input data.
+*/
+
+//NOTE: I Could'nt Use the XML Method And do HTTP Request Due to repeated Errors So Instead I used the Fetch method to get the Data In the OpenWeather Map Instead.
     fetch(apiUrl)
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Error in Network. Try Reconnecting.');
+            if (response == null || response == "") {
+                alert('Input is Unrecognisable. Cannot fetch weather data. Check input and try again.');
             }
             return response.json();
         })
@@ -37,6 +46,6 @@ btn.addEventListener('click', function() {
         .catch(error => {
             
             console.error('Error:', error.message);
-            Weather.innerHTML = '<p>Input is Unrecognisable. Cannot fetch weather data. Check input and try again.</p>';
+            Weather.innerHTML = '<p>Error in Network. Try reconnectings</p>';
         });
 });
